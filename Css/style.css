@@ -74,6 +74,7 @@ body {
   font-weight: var(--fontw--700);
   background-color: var(--primary--color--400);
   color: #ffffff;
+  margin-bottom: 3.125rem;
   padding: 1.5rem 2rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
