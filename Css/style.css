@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
+
+/* Variables */
+:root {
+  --primary--color--100: #4f4f4f;
+  --primary--color--400: #333333;
+  --fontw--400: 400;
+  --fontw--700: 700;
+  --fontf--Inconsolata: "Inconsolata", monospace;
+  --fontf--Space_Mono: "Space Mono", monospace;
+}
+
+/* Resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary--color--400);
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+/*Mobile First*/
+
+.header {
+  font-size: 1.5rem;
+  font-family: var(--fontf--Inconsolata);
+  margin-bottom: 3.75rem;
+}
+
+.container {
+  font-family: var(--fontf--Space_Mono);
+}
+
+.container img {
+  width: 17.875rem;
+  height: 14.875rem;
+  margin-bottom: 3.75rem;
+  transition: all 100ms ease-in-out;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+}
+
+.container h1 {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1.875rem;
+}
+
+.red {
+  font-style: italic;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rebeccapurple;
+  color: rgb(160, 38, 38);
+}
+
+.container p {
+  font-size: 1.125rem;
+  font-weight: var(--primary--color--100);
+  margin-bottom: 4.0625rem;
+}
+
+.cta-btn {
+  font-size: 0.875rem;
+  font-weight: var(--fontw--700);
+  background-color: var(--primary--color--400);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  font-size: 0.875rem;
+  font-family: var(--fontf--Inconsolata);
+  text-align: center;
+}
+
+/* Desktop CSS Rules*/
+
+@media (min-width: 678px) {
+  .wrapper {
+    padding: 1rem 4rem;
+  }
+
+  .container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .container img {
+    height: 28.125rem;
+    width: 33.75rem;
+  }
+
+  .container h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  .container p {
+    font-size: 1.5rem;
+    width: 26ch;
+  }
+
+  .cta-btn {
+    font-size: 0.875rem;
+    padding: 1rem 1.2rem;
+  }
+}
